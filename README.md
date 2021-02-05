@@ -5,7 +5,12 @@ This code was developed to analyse the ability of EEG signals in discriminating 
 Data used in this code is data produced by Luciw et.al.(https://www.nature.com/articles/sdata201447#Sec22). A function WEEG_GetEventsInHS() is provided by the authors and used in this code.
 
 Surface series trials of subjects 7 and 11 are used for this project.
-This code preprocesses the EEG data, performs dimensionality reduction with principle component analysis (this portion is commented out in the code to generate results from subsequent techniques), generates spectrograms, performs a non parametric permutation test using a function permutest found here: https://www.mathworks.com/matlabcentral/fileexchange/71737-permutest, and finally implements an SVM classifier and computes accuracy, false alarm rate, etc.
+This code:
+1) Preprocesses the EEG data
+2) Performs dimensionality reduction with principle component analysis (this portion is commented out in the code to generate results from subsequent techniques)
+3) Generates spectrograms
+4) Performs a non parametric permutation test using a function permutest found here: https://www.mathworks.com/matlabcentral/fileexchange/71737-permutest, and 
+5) Implements an SVM classifier and computes accuracy, false alarm rate, etc.
 
 Other information:
 Mastoid channels are channels 17 and 22.
