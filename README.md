@@ -19,7 +19,7 @@ EEG data is referenced from mastoid channels as signal of interest is in motor c
 
 The function mttfr() for time-frequency analysis of multiple wavelets was provided in a course with rights reserved. Here is some information provided in the file that might help reproduce it:
 
-Usage:
+- Usage:
 
 [power, avepow, itc, times] = mttfr(x, fs, freqs, n_cycles, time_bandwidth)
 
