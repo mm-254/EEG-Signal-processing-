@@ -21,33 +21,33 @@ The function mttfr() for time-frequency analysis of multiple wavelets was provid
 
 - Usage:
 
-[power, avepow, itc, times] = mttfr(x, fs, freqs, n_cycles, time_bandwidth)
+  [power, avepow, itc, times] = mttfr(x, fs, freqs, n_cycles, time_bandwidth)
 
-Example:
+  Example:
 
-[power, avepow, itc, times] = mtffr(x, 4000, 30:5:100, 7.0, 2.0)
+  [power, avepow, itc, times] = mtffr(x, 4000, 30:5:100, 7.0, 2.0)
 
-x : 2-D array of size n_time x n_trials
-Data
-fs : scalar, Hz
-Sampling frequency
-freqs : 1-D vector of size n_freqs x 1
-The set of frequencies to calculate the time-frequency representation
-n_cycles : either a 1-D vector the same size as freqs (or) scalar
-The number of cycles in the wavelet to be used
-time_bandwidth : scalar, unitless should be >= 2. Optional, default 4.0
-Time-(full) bandwith product for the wavelet tapers. The number of
-tapers is automatically chosen based on the time-bandwidth product.
-useparfor : boolean, optional, default is false
-Set to true if parfol is available for your MATLAB version and machine setup to possibly reduce computation time by using parallel threads for different frequencies. Not recommended for small datasets.
+  x : 2-D array of size n_time x n_trials
+  Data
+  fs : scalar, Hz
+  Sampling frequency
+  freqs : 1-D vector of size n_freqs x 1
+  The set of frequencies to calculate the time-frequency representation
+  n_cycles : either a 1-D vector the same size as freqs (or) scalar
+  The number of cycles in the wavelet to be used
+  time_bandwidth : scalar, unitless should be >= 2. Optional, default 4.0
+  Time-(full) bandwith product for the wavelet tapers. The number of
+  tapers is automatically chosen based on the time-bandwidth product.
+  useparfor : boolean, optional, default is false
+  Set to true if parfol is available for your MATLAB version and machine setup to possibly reduce computation time by using parallel threads for different frequencies. Not recommended for small datasets.
 
-References:
+  References:
 
-Slepian, D. (1978). Prolate spheroidal wave functions, Fourier analysis,
-and uncertainty?V: The discrete case. Bell System Technical Journal,
-57(5), 1371-1430.
+  Slepian, D. (1978). Prolate spheroidal wave functions, Fourier analysis,
+  and uncertainty?V: The discrete case. Bell System Technical Journal,
+  57(5), 1371-1430.
 
-Thomson, D. J. (1982). Spectrum estimation and harmonic analysis.
-Proceedings of the IEEE, 70(9), 1055-1096.
+  Thomson, D. J. (1982). Spectrum estimation and harmonic analysis.
+  Proceedings of the IEEE, 70(9), 1055-1096.
 
 
