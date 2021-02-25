@@ -1,7 +1,7 @@
 # EEG-Signal-processing-
 EEG Signal preprocessing and classification in Matlab.
 
-This code was developed to analyse the ability of EEG signals in discriminating between surface textures silk, suede, and sandpaper during grasp and lift tasks
+This code was developed to analyse the ability of EEG signals in discriminating between surface textures silk, suede, and sandpaper during grasp and lift tasks.
 Data used in this code is data produced by Luciw et.al.(https://www.nature.com/articles/sdata201447#Sec22). A function WEEG_GetEventsInHS() is provided by the authors and used in this code.
 
 Surface series trials of subjects 7 and 11 are used for this project.
